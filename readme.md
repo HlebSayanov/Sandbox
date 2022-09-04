@@ -1,3 +1,2 @@
-# Git and Github Course
+# Course for Sandbox
 
-Crash course for Git
