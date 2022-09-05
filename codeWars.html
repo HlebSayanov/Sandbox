@@ -55,11 +55,11 @@ The websites array has already been defined for you using the following code:
 var websites = [];
 */ 
 
-websites.push('codewars')
+// websites.push('codewars')
 
 // There is an object/class already created called MrFreeze. 
 // Mark this object as frozen so that no other changes can be made to it.
-Object.freeze(MrFreeze);
+// Object.freeze(MrFreeze);
 
 
 /*
@@ -81,7 +81,20 @@ function countBy(x, n) {
     return z;
 }
 
+/* 
+Write a function to split a string and convert it into an array of words.
+Examples (Input ==> Output):
+"Robin Singh" ==> ["Robin", "Singh"]
 
+"I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favori
+*/ 
+
+function stringToArray(string){
+
+return string.split(' ')
+
+}
+console.log(stringToArray('my name'))
 
     </script>
 
