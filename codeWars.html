@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code wars</title>
+<body>
+    
+
+    <script>
+/* Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 
+with the exponent ranging from 0 to n ( inclusive ).
+Завершите функцию, которая принимает неотрицательное целое число n в качестве входных данных и 
+возвращает список всех степеней 2 с показателем степени от 0 до n( включительно ).
+
+Примеры
+n = 0  ==> [1]        # [2^0]
+n = 1  ==> [1, 2]     # [2^0, 2^1]
+n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
+
+*/
+
+
+function powersOfTwo(n){
+  var myArray = [];
+  for (var i=0; i<=n; i++){
+    myArray.push(2**i);
+  }
+  return myArray
+}
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
