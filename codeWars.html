@@ -101,7 +101,100 @@ function binToDec(bin){
 return parseInt(bin, 2)
 }
 console.log(binToDec(100, 2))
-    </script>
+/*
+    Create a function that checks if a number n is divisible by two numbers x AND y. 
+    All inputs are strictly positive numbers.
+
+    Examples:
+    1) n =   3, x = 1, y = 3 =>  true because   3 is divisible by 1 and 3
+    2) n =  12, x = 2, y = 6 =>  true because  12 is divisible by 2 and 6
+    3) n = 100, x = 5, y = 3 => false because 100 is not divisible by 3
+    4) n =  12, x = 7, y = 5 => false because  12 is neither divisible by 7 nor 5
+    REFACTORING
+*/
+
+function isDivisible(n, x, y) {
+  if(n >= 0 && x >= 0 && y >=0 ){
+    if(n % x == 0 && n % y == 0){
+      return true
+    }else{
+    return false
+  }
+    }
+}
+
+/*
+    In this game, the hero moves from left to right. The player rolls the dice and moves the number of spaces indicated by the dice two times.
+
+Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
+
+Example:
+move(3, 6) should equal 15
+
+*/
+
+function move (position, roll) {
+ let x
+ return x = (roll * 2) + position 
+}
+
+/*
+
+Напишите программу, которая находит сумму всех чисел от 1 до num. 
+Число всегда будет положительным целым числом больше 0.
+
+Например:
+summation(2) -> 3
+1 + 2
+
+summation(8) -> 36
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+*/
+var summation = function (num) {
+  var x = 0
+  for(var i = 1; i <= num; i++){
+   x += i
+  }
+  return x
+}
+
+console.log(summation(8))
+
+   
+   /*
+   Это бонусное время в большом городе! Жирные коты потирают лапы в предвкушении... но кто заработает больше всего денег?
+
+Создайте функцию, которая принимает два аргумента (зарплата, премия). Заработная плата будет целым числом, а бонус — логическим.
+
+Если премия верна, зарплата должна быть умножена на 10. Если премия ложна, толстяк не заработал достаточно денег и должен получать только свою заявленную зарплату.
+
+Возвращает общую цифру, которую получит человек, в виде строки с префиксом «£»;
+*/ 
+function bonusTime(salary, bonus) {
+// your code here
+  if(bonus === true){
+    return '£'+(salary * 10);
+  }else {
+    return'£'+ salary
+  }
+}
+
+function bonusTime(salary, bonus) {
+  return '£' + salary * (bonus ? 10 : 1);
+}
+
+const bonusTime = (salary, bonus) => `£${salary * (bonus ? 10 : 1)}`;
+
+function bonusTime(salary, bonus) {
+  return bonus ? `£${10 * salary}` : `£${salary}`;
+}
+   
+   
+   
+   
+   
+   
+   </script>
 
 
 
