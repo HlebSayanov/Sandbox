@@ -170,26 +170,76 @@ console.log(summation(8))
 
 Возвращает общую цифру, которую получит человек, в виде строки с префиксом «£»;
 */ 
-function bonusTime(salary, bonus) {
-// your code here
-  if(bonus === true){
-    return '£'+(salary * 10);
-  }else {
-    return'£'+ salary
-  }
+// function bonusTime(salary, bonus) {
+// // your code here
+//   if(bonus === true){
+//     return '£'+(salary * 10);
+//   }else {
+//     return'£'+ salary
+//   }
+// }
+
+// function bonusTime(salary, bonus) {
+//   return '£' + salary * (bonus ? 10 : 1);
+// }
+
+// const bonusTime = (salary, bonus) => `£${salary * (bonus ? 10 : 1)}`;
+
+// function bonusTime(salary, bonus) {
+//   return bonus ? `£${10 * salary}` : `£${salary}`;
+// }
+
+/*
+Clock shows h hours, m minutes and s seconds after midnight.
+
+Your task is to write a function which returns the time since midnight in milliseconds.
+
+Example:
+h = 0
+m = 1
+s = 1
+
+result = 61000
+Input constraints:
+
+0 <= h <= 23
+0 <= m <= 59
+0 <= s <= 59
+
+*/
+function past(h, m, s){
+ const hours = h * 60 * 60 * 1000;
+  const minutes =  m * 60 * 1000;
+  const seconds = s * 1000;
+  return hours + minutes + seconds;
 }
 
-function bonusTime(salary, bonus) {
-  return '£' + salary * (bonus ? 10 : 1);
+function past(h, m, s){
+  return ((h*3600)+(m*60)+s)*1000;
 }
 
-const bonusTime = (salary, bonus) => `£${salary * (bonus ? 10 : 1)}`;
+/*
+Convert number to reversed array of digits
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
 
-function bonusTime(salary, bonus) {
-  return bonus ? `£${10 * salary}` : `£${salary}`;
+Example(Input => Output):
+35231 => [1,3,2,5,3]
+0 => [0]
+*/
+
+function digitize(n) {
+   return n.toString().split('').reverse().map( i => +i)
 }
+
+console.log(digitize(12345))
    
-   
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
+
+function digitize(n) {
+  return String(n).split('').reverse().map(Number)
+}
    
    
    
