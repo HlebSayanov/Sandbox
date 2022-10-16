@@ -378,6 +378,74 @@ function abbrevName(name){
 return name.split(' ').map(i => i[0].toUpperCase()).join('.')
 
 }
+
+
+/*
+Is the string uppercase?
+Task
+Create a method to see whether the string is ALL CAPS.
+
+Examples (input -> output)
+"c" -> False
+"C" -> True
+"hello I AM DONALD" -> False
+"HELLO I AM DONALD" -> True
+"ACSKLDFJSgSKLDFJSKLDFJ" -> False
+"ACSKLDFJSGSKLDFJSKLDFJ" -> True
+*/ 
+
+String.prototype.isUpperCase = function() {
+ var string = new String
+    if(string === string.toUpperCase()){
+        return true
+    } else{
+        return false
+    }
+
+}
+
+
+  //  Я написал пять функций equal1,equal2,equal3,equal4,equal5, определяющих шесть глобальных переменных v1 v2 v3 v4 v5 v6, каждая функция имеет две локальные переменные a,b, пожалуйста, установите соответствующее значение для двух переменных (выберите из v1--v6), сделав возвращаемое значение этой функции равным 100. функция equal1 завершено, обратитесь к этому примеру, чтобы выполнить следующие функции.
+  //  
+
+  let v1 = 50,
+    v2 = 100,
+    v3 = 150,
+    v4 = 200,
+    v5 = 2,
+    v6 = 250;
+
+function equal1(){
+  let a = v1,   
+      b = v1;   
+  return a + b;
+}
+
+//Please refer to the example above to complete the following functions
+function equal2(){
+  let a = v4 , //set number value to a
+      b = v2 ; //set number value to b
+  return a - b;
+}
+
+function equal3(){
+  let a = v5 , //set number value to a
+      b = v1; //set number value to b
+  return a * b;
+}
+
+function equal4(){
+  let a = v4 , //set number value to a
+      b = v5 ; //set number value to b
+  return a / b;
+}
+
+function equal5(){
+  let a =v2  , //set number value to a
+      b =v4 ; //set number value to b
+  return a % b;
+}
+   
    </script>
 
 
